@@ -27,12 +27,43 @@ const books = [
 
 //Problem 3
 function concatenateArrays<T>(...arrays: T[][]): T[] {
-    const result = arrays.reduce((acc, curr) => [...acc, ...curr])
+    const result = arrays.reduce((acc, curr) => [...acc, ...curr], [])
     return result
 }
 
-console.log(concatenateArrays(["a", "b"], ["c"])) ;
-console.log(concatenateArrays([1, 2], [3, 4], [5]));
+// console.log(concatenateArrays(["a", "b"], ["c"])) ;
+// console.log(concatenateArrays([1, 2], [3, 4], [5]));
+
+// Problem 4
+class Vehicle {
+  private  Make: string;
+  private  Year: number;
+
+    constructor(Make: string, Year: number) {
+        this.Make = Make;
+        this.Year = Year;
+    }
+    getInfo () : string {
+        return `"Make: ${this.Make}, Year: ${this.Year}"`;
+    }
+}
+
+class Car extends Vehicle {
+    private Model: string;
+    constructor(Make: string, Year: number, Model: string){
+        super(Make, Year)
+        this.Model = Model;
+    }
+    getModel () : string {
+        return `"Model: ${this.Model}"`
+    }
+}
+
+const myCar = new Car("Toyota", 2020, "Corolla" )
+// console.log(myCar.getInfo())
+// console.log(myCar.getModel())
+
+//Problem 5
 
 
 
