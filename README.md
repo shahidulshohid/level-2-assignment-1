@@ -31,15 +31,13 @@ never means no value is ever possible.
 Functions that throw errors or never finish
 Exhaustive type
 
-## 🧠 difference between `any`, `unknown`, and `never` in TypeScript
+### 🧠 difference between `any`, `unknown`, and `never` in TypeScript
 
-TypeScript provides powerful types to ensure type safety and catch bugs early. Among them, `any`, `unknown`, and `never` serve different and important roles.
-
-| Type       | Can Hold Any Value | Type Checking Required | Safe to Use | ✅ Usage Scenario                            |
+| Type       | Can Hold Any Value | Type Checking Required | Safe to Use | Scenario                            |
 |------------|--------------------|------------------------|-------------|---------------------------------------------|
-| **`any`**  | ✅ Yes              | ❌ No                  | 🚫 No       | Use during quick prototyping or JavaScript migration. |
-| **`unknown`** | ✅ Yes            | ✅ Yes (before use)    | ✅ Yes      | Use when data comes from an external source (e.g., APIs). |
-| **`never`**  | ❌ No              | N/A                    | ✅ Yes      | Use for functions that never return (e.g., `throw`, infinite loops). |
+| **`any`**  | Yes              | No                  | No       | Use during quick prototyping or JavaScript migration. |
+| **`unknown`** | Yes            | Yes (before use)    | Yes      | Use when data comes from an external source (e.g., APIs). |
+| **`never`**  | No              | N/A                    | Yes      | Use for functions that never return (e.g., `throw`, infinite loops). |
 
 ## What is the use of enums in TypeScript❓Provide an example of a numeric and string enum
 
