@@ -12,7 +12,7 @@ any turns off type safety.
 Useful during quick prototyping or migrating JS code to TS.
 Should be used sparingly because it removes TypeScript’s benefits.
 
-🛡️ unknown Type
+## 🛡️ `unknown` Type
 In typescript, unknown is a type that represent a value whose type is not known at the time of writing the code. It.s similar to any in that it can hold any value, but you must perform type checking before using it.
 
 🔑 Key Points:
@@ -20,7 +20,7 @@ unknown is safer than any.
 Forces you to check the type before using the value.
 Useful for handling data from external sources like APIs.
 
-🚫 never Type
+## 🚫 `never` Type
 In typescript, never is a special type that represent a value that never occurs. It is used to indicate that a function never returns or a case is logically impossible.
 
 🔑 Key Points:
@@ -30,7 +30,7 @@ Exhaustive type
 
 4. What is the use of enums in TypeScript? Provide an example of a numeric and string enum.
 
-🧾 TypeScript Enums: Making Code Clearer
+##🧾 TypeScript Enums: Making Code Clearer
 Enum: Enums are a feature in TypeScript that allows you to define a set of named constants. They help make code more readable, organized, and type-safe, especially when dealing with a fixed set of related values like roles, directions, or status codes.
 
 🔢 Numeric Enum Example
@@ -52,4 +52,4 @@ Viewer = "VIEWER"
 }
 
 let role = UserRole.Admin;
-console.log(role); -->
+console.log(role);
