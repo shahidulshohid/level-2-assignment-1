@@ -27,10 +27,10 @@ Enum: Enums are a feature in TypeScript that allows you to define a set of named
 
 Example of Numeric Enum:
 enum Direction {
-Up, // 0
-Down, // 1
-Left, // 2
-Right // 3
+Up, 
+Down, 
+Left, 
+Right 
 }
 
 let move = Direction.Left;
