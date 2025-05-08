@@ -38,6 +38,7 @@ Exhaustive type
 --
 
 ## 🧾 TypeScript Enums: Making Code Clearer
+
 Enum: Enums are a feature in TypeScript that allows you to define a set of named constants. They help make code more readable, organized, and type-safe, especially when dealing with a fixed set of related values like roles, directions, or status codes.
 
 🔢 Numeric Enum Example
