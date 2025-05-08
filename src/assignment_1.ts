@@ -1,4 +1,4 @@
-// Problem 1:
+
 function formatString(input: string, toUpper?: boolean): string {
   if (toUpper === false) {
     return input.toLocaleLowerCase();
@@ -7,11 +7,7 @@ function formatString(input: string, toUpper?: boolean): string {
   }
 }
 
-// console.log(formatString("Hello"));
-// console.log(formatString("Hello", true));
-// console.log(formatString("Hello", false));
 
-//problem 2
 function filterByRating(
   items: { title: string; rating: number }[]
 ): { title: string; rating: number }[] {
@@ -25,18 +21,11 @@ const books = [
   { title: "Book C", rating: 5.0 },
 ];
 
-// console.log(filterByRating(books))
-
-//Problem 3
 function concatenateArrays<T>(...arrays: T[][]): T[] {
   const result = arrays.reduce((acc, curr) => [...acc, ...curr], []);
   return result;
 }
 
-// console.log(concatenateArrays(["a", "b"], ["c"])) ;
-// console.log(concatenateArrays([1, 2], [3, 4], [5]));
-
-// Problem 4
 class Vehicle {
   private Make: string;
   private Year: number;
@@ -62,10 +51,7 @@ class Car extends Vehicle {
 }
 
 const myCar = new Car("Toyota", 2020, "Corolla");
-// console.log(myCar.getInfo())
-// console.log(myCar.getModel())
 
-//Problem 5
 function processValue(value: string | number): number {
   if (typeof value === "string") {
     return value.length;
@@ -74,10 +60,6 @@ function processValue(value: string | number): number {
   }
 }
 
-// console.log(processValue("hello"));
-// console.log(processValue(10));
-
-// Problem 6
 interface Product {
   name: string;
   price: number;
@@ -100,9 +82,6 @@ const products = [
   { name: "Bag", price: 50 },
 ];
 
-//   console.log(getMostExpensiveProduct(products));
-
-// problem 7
 enum Day {
   Monday,
   Tuesday,
@@ -115,12 +94,8 @@ enum Day {
 
 function getDayType(day: Day): string {
   return day === Day.Saturday || day === Day.Sunday ? "Weekend" : "Weekday";
-}
+} 
 
-// console.log(getDayType(Day.Monday));
-// console.log(getDayType(Day.Sunday)); 
-
-// problem 8
 async function squareAsync(n: number): Promise<number> {
   if (n < 0) {
     const result = Promise.reject("Negative number not allowed");
@@ -131,5 +106,3 @@ async function squareAsync(n: number): Promise<number> {
   }
 }
 
-// squareAsync(4).then(console.log);
-// squareAsync(-3).catch(console.error);
