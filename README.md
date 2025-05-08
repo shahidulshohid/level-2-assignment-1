@@ -1,5 +1,5 @@
 
-## Explain the difference between any, unknown, and never types in TypeScript❓
+## Explain the difference between any, unknown, and never types in TypeScript
 
 ## 🧠 difference between `any`, `unknown`, and `never` in TypeScript
 
@@ -18,7 +18,7 @@ Should be used sparingly because it removes TypeScript’s benefits.
 ## 🛡️ `unknown` Type
 In typescript, unknown is a type that represent a value whose type is not known at the time of writing the code. It.s similar to any in that it can hold any value, but you must perform type checking before using it.
 
-🔑 Key Points:
+### 🔑 Key Points:
 unknown is safer than any.
 Forces you to check the type before using the value.
 Useful for handling data from external sources like APIs.
@@ -26,12 +26,12 @@ Useful for handling data from external sources like APIs.
 ## 🚫 `never` Type
 In typescript, never is a special type that represent a value that never occurs. It is used to indicate that a function never returns or a case is logically impossible.
 
-🔑 Key Points:
+### 🔑 Key Points:
 never means no value is ever possible.
 Functions that throw errors or never finish
 Exhaustive type
 
-## What is the use of enums in TypeScript? Provide an example of a numeric and string enum❓
+## What is the use of enums in TypeScript❓ Provide an example of a numeric and string enum
 
 ## 📚 TypeScript Enums: Making Code Clearer
 
