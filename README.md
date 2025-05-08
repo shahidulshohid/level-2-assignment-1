@@ -1,5 +1,5 @@
 
-## Explain the difference between any, unknown, and never types in TypeScript.
+## ❓Explain the difference between any, unknown, and never types in TypeScript.
 
 --
 
@@ -33,7 +33,7 @@ never means no value is ever possible.
 Functions that throw errors or never finish
 Exhaustive type
 
-## What is the use of enums in TypeScript? Provide an example of a numeric and string enum.
+## ❓What is the use of enums in TypeScript? Provide an example of a numeric and string enum.
 
 --
 
