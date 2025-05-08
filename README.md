@@ -1,5 +1,8 @@
 
 ## Explain the difference between any, unknown, and never types in TypeScript.
+
+--
+
 ## 🧠 difference between `any`, `unknown`, and `never` in TypeScript
 
 TypeScript introduces powerful types to ensure type safety. Among them, `any`, `unknown`, and `never` are special types that serve different purposes.
@@ -30,9 +33,11 @@ never means no value is ever possible.
 Functions that throw errors or never finish
 Exhaustive type
 
-# What is the use of enums in TypeScript? Provide an example of a numeric and string enum.
+## What is the use of enums in TypeScript? Provide an example of a numeric and string enum.
 
-##🧾 TypeScript Enums: Making Code Clearer
+--
+
+## 🧾 TypeScript Enums: Making Code Clearer
 Enum: Enums are a feature in TypeScript that allows you to define a set of named constants. They help make code more readable, organized, and type-safe, especially when dealing with a fixed set of related values like roles, directions, or status codes.
 
 🔢 Numeric Enum Example
