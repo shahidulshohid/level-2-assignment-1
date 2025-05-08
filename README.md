@@ -1,8 +1,6 @@
 
 ## ❓Explain the difference between any, unknown, and never types in TypeScript.
 
---
-
 ## 🧠 difference between `any`, `unknown`, and `never` in TypeScript
 
 TypeScript introduces powerful types to ensure type safety. Among them, `any`, `unknown`, and `never` are special types that serve different purposes.
@@ -34,8 +32,6 @@ Functions that throw errors or never finish
 Exhaustive type
 
 ## ❓What is the use of enums in TypeScript? Provide an example of a numeric and string enum.
-
---
 
 ## 🧾 TypeScript Enums: Making Code Clearer
 
