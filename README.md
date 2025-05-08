@@ -1,4 +1,4 @@
-<!-- 3. Explain the difference between any, unknown, and never types in TypeScript.
+3. Explain the difference between any, unknown, and never types in TypeScript.
 
    Any: In typescript, any is a special type that allows a variable to hold any kind of value without any type checking. it disables the type system for the variable, making it behave like plain javascript.
 
@@ -19,30 +19,29 @@ Never: In typescript, never is a special type that represent a value that never 
 Key Points:
 never means no value is ever possible.
 Functions that throw errors or never finish
-Exhaustive type -->
+Exhaustive type
 
+4. What is the use of enums in TypeScript? Provide an example of a numeric and string enum.
 
-# 🔎 TypeScript Types: `any`, `unknown`, and `never`
+Enum: Enums are a feature in TypeScript that allows you to define a set of named constants. They help make code more readable, organized, and type-safe, especially when dealing with a fixed set of related values like roles, directions, or status codes.
 
-This document explains the key differences between the special types `any`, `unknown`, and `never` in TypeScript.
+Example of Numeric Enum:
+enum Direction {
+Up, // 0
+Down, // 1
+Left, // 2
+Right // 3
+}
 
----
+let move = Direction.Left;
+console.log(move);
 
-## ✅ `any`
+Example of String Enum:
+enum UserRole {
+Admin = "ADMIN",
+Editor = "EDITOR",
+Viewer = "VIEWER"
+}
 
-The `any` type allows a variable to hold **any kind of value** without any type checking. It disables the type system for that variable and makes it behave like plain JavaScript.
-
-### 🔸 Key Points:
-- Turns off type safety.
-- Useful during quick prototyping or while migrating JavaScript code to TypeScript.
-- Should be used sparingly as it removes the benefits of TypeScript.
-
-### 🔹 Example:
-
-```ts
-let data: any = 42;
-data = "Hello";
-data = true;
-
-console.log(data.toUpperCase()); // No error, but might fail at runtime
-
+let role = UserRole.Admin;
+console.log(role);
